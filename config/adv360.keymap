@@ -40,11 +40,11 @@
 
         default_layer {
             bindings = <
-       &kp ESC     &kp N1        &kp N2    &kp N3     &kp N4  &kp N5                        &mo 3                                                                &tog 1  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
-       &kp TAB      &kp Q         &kp W     &kp E      &kp R   &kp T              &kp C_VOLUME_UP                                                            &kp C_MUTE   &kp Y   &kp U      &kp I     &kp O     &kp P  &kp EQUAL
- &kp BACKSLASH      &kp A         &kp S     &kp D      &kp F   &kp G            &kp C_VOLUME_DOWN  &kp BSPC  &kp LGUI   &none   &none   &kp LGUI  &kp RCTRL         &lt   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
-     &kp LSHFT      &kp Z         &kp X     &kp C      &kp V   &kp B                        &none     &none  &kp HOME   &none   &none  &kp PG_UP      &none       &none   &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
-     &kp LCTRL  &kp GRAVE  &kp LEFT_ALT  &kp LEFT  &kp RIGHT                            &kp SPACE   &kp DEL   &kp END                  &kp PG_DN  &kp ENTER   &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT      &mo 2
+       &kp ESC     &kp N1        &kp N2    &kp N3     &kp N4  &kp N5                     &mo 3                                                                  &tog 1  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
+       &kp TAB      &kp Q         &kp W     &kp E      &kp R   &kp T             &macro_vdleft                                                            &kp C_VOL_UP   &kp Y   &kp U      &kp I     &kp O     &kp P  &kp EQUAL
+ &kp BACKSLASH      &kp A         &kp S     &kp D      &kp F   &kp G            &macro_vdright  &kp BSPC  &kp LGUI   &none   &none   &kp LGUI  &kp RCTRL  &kp C_VOL_DN   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
+     &kp LSHFT      &kp Z         &kp X     &kp C      &kp V   &kp B                     &none     &none  &kp HOME   &none   &none  &kp PG_UP      &none         &none   &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
+     &kp LCTRL  &kp GRAVE  &kp LEFT_ALT  &kp LEFT  &kp RIGHT                         &kp SPACE   &kp DEL   &kp END                  &kp PG_DN  &kp ENTER     &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT      &mo 2
             >;
         };
 
@@ -60,11 +60,11 @@
 
         layer_fn {
             bindings = <
- &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6             &mo 3                                                  &tog 1  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11       &kp F12
- &trans  &trans  &trans  &trans  &trans  &trans             &none                                                   &none  &trans  &trans  &trans   &trans   &trans        &trans
- &trans  &trans  &trans  &trans  &trans  &trans             &none  &trans  &trans   &none   &none  &trans  &trans   &none  &trans  &trans  &trans   &trans   &trans        &trans
- &trans  &trans  &trans  &trans  &trans  &trans             &none   &none  &trans   &none   &none  &trans   &none   &none  &trans  &trans  &trans   &trans   &trans  &kp CAPSLOCK
- &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans   &trans   &trans        &trans
+ &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                 &mo 3                                                  &tog 1  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11       &kp F12
+ &trans  &trans  &trans  &trans  &trans  &trans            &kp C_MUTE                                                   &none  &trans  &trans  &trans   &trans   &trans        &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &kp C_MUTE  &trans  &trans   &none   &none  &trans  &trans   &none  &trans  &trans  &trans   &trans   &trans        &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                 &none   &none  &trans   &none   &none  &trans   &none   &none  &trans  &trans  &trans   &trans   &trans  &kp CAPSLOCK
+ &trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans   &trans   &trans        &trans
             >;
         };
 
